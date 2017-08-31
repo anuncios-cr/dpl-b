@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+	<!-- Módulo API -->
+	<include file="database/api-0001-tenant.xml"/>
+
+	<!-- Módulo Audit -->
+	<include file="database/audit-0001-audit_e_auditInfo.xml"/>
+
+	<!-- Módulo OAuth -->
+	<include file="database/api-oauth-0001-tables.xml"/>
+
+	<!-- Módulo Email -->
+	<include file="database/api-email-0001-email_history.xml"/>
+
+	<!-- Módulo Process -->
+	<include file="database/api-process-0001-process.xml"/>
+
+	<!-- Módulo Persistence -->
+	<include file="database/api-persistence-0001-tenant.xml"/>
+	
+	<!-- Módulo FTP -->
+	<include file="database/api-ftp-0001-ftp_fail.xml"/>
+	
+	
+	<!-- Módulo Anuncio -->
+	<include file="anuncio-0001-tabelas_iniciais.xml"/>
+	<include file="anuncio-0003-views_iniciais.xml"/>
+	<include file="anuncio-0004-contato.xml"/>
+	<include file="anuncio-0005-sites.xml"/>
+	<include file="anuncio-0006-history.xml"/>
+	
+
+	<!-- Módulo Prospector -->
+	<include file="database/prospector-0001-site_e_pageHistory.xml"/>
+
+
+	<!-- Massa de Dados -->
+	<include file="anuncio-9000-Massa-Base.xml"/>
+	<include file="anuncio-9001-Tenant.xml"/>
+	<include file="anuncio-9002-Templates.xml"/>
+	<include file="anuncio-9003-Tabela-Preco.xml"/>
+	<include file="anuncio-9004-Cidade.xml"/>
+	<include file="anuncio-9005-Sites.xml"/>
+
+</databaseChangeLog>
